@@ -19,12 +19,12 @@ sourceCompatibility = JavaVersion.VERSION_1_8
 targetCompatibility = JavaVersion.VERSION_1_8
 
 dependencies {
-    compile group: 'io.projectreactor', name: 'reactor-core', version: '3.4.1'
-    compile group: 'org.springframework', name: 'spring-web', version: '5.3.2'
-    compile group: 'org.springframework.cloud', name: 'spring-cloud-gateway-core', version: '2.2.6.RELEASE'
+    implementation group: 'io.projectreactor', name: 'reactor-core', version: '3.4.21'
+    implementation group: 'org.springframework', name: 'spring-web', version: '5.3.22'
+    implementation group: 'org.springframework.cloud', name: 'spring-cloud-gateway-core', version: '2.2.10.RELEASE'
 
     // If using older agent JARs to compile
-    compile fileTree(dir: 'lib', includes: ['*.jar'])
+    implementation fileTree(dir: 'lib', includes: ['*.jar'])
 
 }
 
