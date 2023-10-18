@@ -24,8 +24,8 @@ public abstract class FilteringWebHandler_Instrumentation {
             final Pattern idPattern = Pattern.compile("^(?=[^\\s]*?[0-9])[-{}().:_|0-9]+$");
             final Pattern codPattern = Pattern.compile("^(?=[^\\s]*?[0-9])(?=[^\\s]*?[a-zA-Z])(?!\\{id\\}).*$");
 
-            final String gatewayRouteId = "gateway_route_id";
-            final String gatewayRouteUri = "gateway_route_uri";
+            final String gatewayRouteId = "gatewayRouteId";
+            final String gatewayRouteUri = "gatewayRouteUri";
 
             String path = exchange.getRequest().getPath().value();
 
